@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>cymetric.evaluator - Evaluators &mdash; Home</title>
+    
+    <link rel="stylesheet" href="../_static/cyclus.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'v0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../_static/cloud.js"></script>
+    <link rel="shortcut icon" href="../_static/big_c.ico"/>
+    <link rel="top" title="Home" href="../index.html" />
+    <link rel="up" title="Cymetric API" href="index.html" />
+    <link rel="next" title="cymetric.execution - Execution" href="execution.html" />
+    <link rel="prev" title="cymetric.root_metrics - Root Metrics" href="root_metrics.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript">
+var ga_enabled = !$.cookie('disable-ga');
+if(ga_enabled){
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12222727-2']);
+  _gaq.push(['_setCookiePath', '/']);
+  _gaq.push(['_setDetectFlash', false]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+  </head>
+  <body>
+    <div class="relbar-top">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="execution.html" title="cymetric.execution - Execution"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="root_metrics.html" title="cymetric.root_metrics - Root Metrics"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Home</a> &raquo;</li>
+
+          <li><a href="index.html" accesskey="U">Cymetric API</a> &raquo;</li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-cymetric.evaluator">
+<span id="cymetric-evaluator-evaluators"></span><span id="cym-evaluator"></span><h1><a class="reference internal" href="#module-cymetric.evaluator" title="cymetric.evaluator"><tt class="xref py py-mod docutils literal"><span class="pre">cymetric.evaluator</span></tt></a> - Evaluators<a class="headerlink" href="#module-cymetric.evaluator" title="Permalink to this headline">¶</a></h1>
+<p>An evaluation context for metrics.</p>
+<dl class="class">
+<dt id="cymetric.evaluator.Evaluator">
+<em class="property">class </em><tt class="descclassname">cymetric.evaluator.</tt><tt class="descname">Evaluator</tt><big>(</big><em>db</em><big>)</big><a class="headerlink" href="#cymetric.evaluator.Evaluator" title="Permalink to this definition">¶</a></dt>
+<dd><p>An evaluation context for metrics.</p>
+<dl class="method">
+<dt id="cymetric.evaluator.Evaluator.eval">
+<tt class="descname">eval</tt><big>(</big><em>metric</em>, <em>conds=None</em><big>)</big><a class="headerlink" href="#cymetric.evaluator.Evaluator.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evalutes a metric with the given conditions.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cymetric.evaluator.eval">
+<tt class="descclassname">cymetric.evaluator.</tt><tt class="descname">eval</tt><big>(</big><em>metric</em>, <em>db</em>, <em>conds=None</em><big>)</big><a class="headerlink" href="#cymetric.evaluator.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evalutes a metric with the given conditions in a database.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cymetric.evaluator.raw_to_series">
+<tt class="descclassname">cymetric.evaluator.</tt><tt class="descname">raw_to_series</tt><big>(</big><em>df</em>, <em>idx</em>, <em>val</em><big>)</big><a class="headerlink" href="#cymetric.evaluator.raw_to_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert data frame to series with multi-index.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cymetric.evaluator.register_metric">
+<tt class="descclassname">cymetric.evaluator.</tt><tt class="descname">register_metric</tt><big>(</big><em>cls</em><big>)</big><a class="headerlink" href="#cymetric.evaluator.register_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a metric to the registry.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+        <p class="logo"><a href="../index.html" title="index">
+          <img class="logo" src="../_static/big_c.png" alt="Logo"/>
+        </a></p>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="root_metrics.html"
+                          title="Previous page">&larr; <tt class="docutils literal"><span class="pre">cymetric.root_metrics</span></tt> - Root Metrics</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="execution.html"
+                          title="Next page">&rarr; <tt class="docutils literal"><span class="pre">cymetric.execution</span></tt> - Execution</a></p>
+  </div>
+  <div class="sphinxlocaltoc">
+  <h3>Useful Pages</h3>
+    <ul><li><ul>
+    <li><a href="http://fuelcycle.org/user/index.html">User Guide</a></li>
+    <li><a href="http://fuelcycle.org/arche/index.html">Archetype Developer Guide</a></li>
+    <li><a href="http://fuelcycle.org/cyclus/api/">Cyclus API Documentation</a></li>
+    <li><a href="http://fuelcycle.org/cycamore/api/">Cycamore API Documentation</a></li>
+    <li><a href="http://fuelcycle.org/basics/glossary.html">Glossary</a></li>
+    <li><a href="mailto:cyclus-users+subscribe@googlegroups.com?subject=Subscribe&body=Send this message to subscribe to the list">Join</a> the 
+      <a href="https://groups.google.com/forum/#!forum/cyclus-users" target="_blank"><span style="font-variant:small-caps">Cyclus</span> Users</a> mailing list.
+    <li><a href="mailto:cyclus-dev+subscribe@googlegroups.com?subject=Subscribe&body=Send this message to subscribe to the list">Join</a> the 
+      <a href="https://groups.google.com/forum/#!forum/cyclus-users" target="_blank"><span style="font-variant:small-caps">Cyclus</span> Developers</a> mailing list.
+    </ul></li></ul>
+  </div>
+    
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="execution.html" title="cymetric.execution - Execution"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="root_metrics.html" title="cymetric.root_metrics - Root Metrics"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Home</a> &raquo;</li>
+
+          <li><a href="index.html" >Cymetric API</a> &raquo;</li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2012-2014, University of Wisconsin Computational Nuclear Engineering Research Group.
+      Last updated on Jan 04, 2015.
+    </div><script type="text/javascript">
+    if(ga_enabled){
+        document.write("<div class=\"footer\">This page uses <a href=\"http://analytics.google.com\">Google Analytics</a> to collect statistics. ");
+        document.write("Click <button title=\"set cookie to disable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', 'true', {expires: 3650, path: '/'}); window.location.reload(); return false; \">here</button> to disable analytics for this site.");
+        document.write("</div>");
+    }else{
+        document.write("<div class=\"footer\">Google Analytics has been disabled. ");
+        document.write("Click <button title=\"set cookie to re-enable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', null, {path: '/'}); window.location.reload(); return false; \">here</button> to re-enable analytics for this site.");
+    };
+</script>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

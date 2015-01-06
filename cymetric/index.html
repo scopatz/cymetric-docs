@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cymetric API &mdash; Home</title>
+    
+    <link rel="stylesheet" href="../_static/cyclus.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'v0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../_static/cloud.js"></script>
+    <link rel="shortcut icon" href="../_static/big_c.ico"/>
+    <link rel="top" title="Home" href="../index.html" />
+    <link rel="next" title="cymetric.typesystem - Cyclus Type System" href="typesystem.html" />
+    <link rel="prev" title="Tutorial" href="../tutorial.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript">
+var ga_enabled = !$.cookie('disable-ga');
+if(ga_enabled){
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12222727-2']);
+  _gaq.push(['_setCookiePath', '/']);
+  _gaq.push(['_setDetectFlash', false]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+  </head>
+  <body>
+    <div class="relbar-top">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="typesystem.html" title="cymetric.typesystem - Cyclus Type System"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="../tutorial.html" title="Tutorial"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Home</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="cymetric-api">
+<h1>Cymetric API<a class="headerlink" href="#cymetric-api" title="Permalink to this headline">¶</a></h1>
+<p>The following modules make up the cymetric package.  Note that most of the
+important stuff you can get directly from <tt class="docutils literal"><span class="pre">cymetric</span></tt> without needing to import
+the module.  For example, the following two imports are the same:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">cymetric</span> <span class="kn">import</span> <span class="n">metric</span>           <span class="c"># nice and short</span>
+<span class="kn">from</span> <span class="nn">cymetric.metrics</span> <span class="kn">import</span> <span class="n">metrics</span>  <span class="c"># where &#39;metric&#39; really lives</span>
+</pre></div>
+</div>
+<p><strong>Interface Modules:</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typesystem.html"><tt class="docutils literal"><span class="pre">cymetric.typesystem</span></tt> - Cyclus Type System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schemas.html"><tt class="docutils literal"><span class="pre">cymetric.schemas</span></tt> - Schemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html"><tt class="docutils literal"><span class="pre">cymetric.metrics</span></tt> - Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="root_metrics.html"><tt class="docutils literal"><span class="pre">cymetric.root_metrics</span></tt> - Root Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluator.html"><tt class="docutils literal"><span class="pre">cymetric.evaluator</span></tt> - Evaluators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execution.html"><tt class="docutils literal"><span class="pre">cymetric.execution</span></tt> - Execution</a></li>
+</ul>
+</div>
+<p><strong>Helper Modules:</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cyclus.html"><tt class="docutils literal"><span class="pre">cymetric.cyclus</span></tt> - Cyclus Bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html"><tt class="docutils literal"><span class="pre">cymetric.main</span></tt> - Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html"><tt class="docutils literal"><span class="pre">cymetric.tools</span></tt> - Tools</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+        <p class="logo"><a href="../index.html" title="index">
+          <img class="logo" src="../_static/big_c.png" alt="Logo"/>
+        </a></p>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="../tutorial.html"
+                          title="Previous page">&larr; Tutorial</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="typesystem.html"
+                          title="Next page">&rarr; <tt class="docutils literal"><span class="pre">cymetric.typesystem</span></tt> - Cyclus Type System</a></p>
+  </div>
+  <div class="sphinxlocaltoc">
+  <h3>Useful Pages</h3>
+    <ul><li><ul>
+    <li><a href="http://fuelcycle.org/user/index.html">User Guide</a></li>
+    <li><a href="http://fuelcycle.org/arche/index.html">Archetype Developer Guide</a></li>
+    <li><a href="http://fuelcycle.org/cyclus/api/">Cyclus API Documentation</a></li>
+    <li><a href="http://fuelcycle.org/cycamore/api/">Cycamore API Documentation</a></li>
+    <li><a href="http://fuelcycle.org/basics/glossary.html">Glossary</a></li>
+    <li><a href="mailto:cyclus-users+subscribe@googlegroups.com?subject=Subscribe&body=Send this message to subscribe to the list">Join</a> the 
+      <a href="https://groups.google.com/forum/#!forum/cyclus-users" target="_blank"><span style="font-variant:small-caps">Cyclus</span> Users</a> mailing list.
+    <li><a href="mailto:cyclus-dev+subscribe@googlegroups.com?subject=Subscribe&body=Send this message to subscribe to the list">Join</a> the 
+      <a href="https://groups.google.com/forum/#!forum/cyclus-users" target="_blank"><span style="font-variant:small-caps">Cyclus</span> Developers</a> mailing list.
+    </ul></li></ul>
+  </div>
+    
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="typesystem.html" title="cymetric.typesystem - Cyclus Type System"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="../tutorial.html" title="Tutorial"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Home</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2012-2014, University of Wisconsin Computational Nuclear Engineering Research Group.
+      Last updated on Jan 04, 2015.
+    </div><script type="text/javascript">
+    if(ga_enabled){
+        document.write("<div class=\"footer\">This page uses <a href=\"http://analytics.google.com\">Google Analytics</a> to collect statistics. ");
+        document.write("Click <button title=\"set cookie to disable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', 'true', {expires: 3650, path: '/'}); window.location.reload(); return false; \">here</button> to disable analytics for this site.");
+        document.write("</div>");
+    }else{
+        document.write("<div class=\"footer\">Google Analytics has been disabled. ");
+        document.write("Click <button title=\"set cookie to re-enable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', null, {path: '/'}); window.location.reload(); return false; \">here</button> to re-enable analytics for this site.");
+    };
+</script>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
